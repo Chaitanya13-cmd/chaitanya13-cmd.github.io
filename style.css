@@ -154,22 +154,8 @@ input {
   font-weight: bold;
 }
 
-.boss-btn {
-  background: linear-gradient(135deg, #7c2d12, #ef4444);
-  color: white;
-  padding: 16px 36px;
-  border: none;
-  border-radius: 14px;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: 0 0 20px rgba(239,68,68,0.7);
-  transition: transform 0.1s, box-shadow 0.1s;
-}
 
-.boss-btn:active {
-  transform: scale(0.95);
-  box-shadow: 0 0 30px rgba(239,68,68,1);
-}
+
 
 
 

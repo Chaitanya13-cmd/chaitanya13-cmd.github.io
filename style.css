@@ -83,3 +83,12 @@ button:hover {
   cursor: pointer;
   box-shadow: 0 0 20px rgba(239,68,68,0.8);
 }
+.card {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+

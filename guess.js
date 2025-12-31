@@ -1,38 +1,41 @@
-const secretNumber = Math.floor(Math.random() * 10) + 1;
+document.addEventListener("DOMContentLoaded", () => {
 
-const roasts = [
-  "💀 Bhai rehne de… bilkul galat",
-  "😂 Confidence OP, answer flop",
-  "🤡 Aankh band karke guess?",
-  "😬 Ye toh door door tak nahi",
-  "🔥 Skill issue detected",
-  "🧠 Brain.exe not responding"
-  "😂 Itna confidence galat answer ke liye?",  
-  "🔥 Skill issue bro", 
-  "🧠 CPU lagao thoda" 
-  "🤧 Tumse Na Ho Payega", 
-  "🤣 Lag nahi tha, skill hi missing thi", 
-];
+  const secretNumber = Math.floor(Math.random() * 10) + 1;
 
-const button = document.getElementById("guessBtn");
-const input = document.getElementById("guessInput");
-const result = document.getElementById("result");
+  const roasts = [
+   "💀 Bhai rehne de… bilkul galat", 
+    "😂 Confidence OP, answer flop", 
+    "🤡 Aankh band karke guess?", 
+    "😬 Ye toh door door tak nahi", 
+    "🔥 Skill issue detected", 
+    "🧠 Brain.exe not responding" 
+    "😂 Itna confidence galat answer ke liye?", 
+    "🔥 Skill issue bro", 
+    "🧠 CPU lagao thoda", 
+    "🤧 Tumse Na Ho Payega", 
+    "🤣 Lag nahi tha, skill hi missing thi",
+  ];
 
-button.addEventListener("click", () => {
-  const guess = input.value;
+  const button = document.getElementById("guessBtn");
+  const input = document.getElementById("guessInput");
+  const result = document.getElementById("result");
 
-  if (guess === "") {
-    result.innerText = "😐 Number daal pehle";
-    result.style.color = "orange";
-    return;
-  }
+  button.addEventListener("click", () => {
+    const guess = input.value;
 
-  if (Number(guess) === secretNumber) {
-    result.innerText = "🎉 Aree OP! Sahi pakda 🔥";
-    result.style.color = "#22c55e";
-  } else {
-    const roast = roasts[Math.floor(Math.random() * roasts.length)];
-    result.innerText = roast;
-    result.style.color = "#ef4444";
-  }
+    if (!guess) {
+      result.innerText = "😐 Number daal pehle";
+      return;
+    }
+
+    if (Number(guess) === secretNumber) {
+      result.innerText = "🎉 OP! Sahi jawab 🔥";
+      result.style.color = "lime";
+    } else {
+      result.innerText =
+        roasts[Math.floor(Math.random() * roasts.length)];
+      result.style.color = "red";
+    }
+  });
+
 });

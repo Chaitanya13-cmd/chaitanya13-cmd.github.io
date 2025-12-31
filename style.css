@@ -110,6 +110,21 @@ input {
   position: relative;
   z-index: 50;   /* 👈 sabse upar */
 }
+body {
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+.guess-game {
+  margin-top: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
 
 

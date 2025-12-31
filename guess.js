@@ -3,17 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const secretNumber = Math.floor(Math.random() * 10) + 1;
 
   const roasts = [
-   "💀 Bhai rehne de… bilkul galat", 
-    "😂 Confidence OP, answer flop", 
-    "🤡 Aankh band karke guess?", 
-    "😬 Ye toh door door tak nahi", 
+    "💀 Bhai rehne de",
+    "😂 Ye toh galat nikla",
+    "🤡 Aankh band thi kya",
+    "🔥 Skill issue bro",
+    "🧠 Thoda dimag lagao"
     "🔥 Skill issue detected", 
-    "🧠 Brain.exe not responding" 
-    "😂 Itna confidence galat answer ke liye?", 
-    "🔥 Skill issue bro", 
-    "🧠 CPU lagao thoda", 
-    "🤧 Tumse Na Ho Payega", 
-    "🤣 Lag nahi tha, skill hi missing thi",
+    "🧠 Brain.exe not responding"
   ];
 
   const button = document.getElementById("guessBtn");

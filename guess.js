@@ -1,32 +1,38 @@
 const secretNumber = Math.floor(Math.random() * 10) + 1;
 
 const roasts = [
-  "💀 Bhai rehne de… ye toh bilkul galat tha",
-  "😂 Itna confidence galat answer ke liye?",
-  "🤡 Ye number nahi, ye toh sapna lag raha hai",
-  "😬 Aankh band karke guess kiya kya?",
-  "🔥 Skill issue bro",
-  "🧠 CPU lagao thoda"
-  "🤧 Tumse Na Ho Payega Lala",
-  "🤣 Lag nahi tha, skill hi missing thi",
-  "💀 Itni baar mara ki respawn bhi bore ho gaya",
+  "💀 Bhai rehne de… bilkul galat",
+  "😂 Confidence OP, answer flop",
+  "🤡 Aankh band karke guess?",
+  "😬 Ye toh door door tak nahi",
+  "🔥 Skill issue detected",
+  "🧠 Brain.exe not responding"
+  "😂 Itna confidence galat answer ke liye?",  
+  "🔥 Skill issue bro", 
+  "🧠 CPU lagao thoda" 
+  "🤧 Tumse Na Ho Payega", 
+  "🤣 Lag nahi tha, skill hi missing thi", 
 ];
 
-function checkGuess() {
-  const input = document.getElementById("guessInput").value;
-  const result = document.getElementById("result");
+const button = document.getElementById("guessBtn");
+const input = document.getElementById("guessInput");
+const result = document.getElementById("result");
 
-  if (input === "") {
-    result.innerText = "😐 Number daal toh pehle";
+button.addEventListener("click", () => {
+  const guess = input.value;
+
+  if (guess === "") {
+    result.innerText = "😐 Number daal pehle";
+    result.style.color = "orange";
     return;
   }
 
-  if (Number(input) === secretNumber) {
-    result.innerText = "🎉 Areee OP! Sahi jawab 🔥";
+  if (Number(guess) === secretNumber) {
+    result.innerText = "🎉 Aree OP! Sahi pakda 🔥";
     result.style.color = "#22c55e";
   } else {
-    const randomRoast = roasts[Math.floor(Math.random() * roasts.length)];
-    result.innerText = randomRoast;
+    const roast = roasts[Math.floor(Math.random() * roasts.length)];
+    result.innerText = roast;
     result.style.color = "#ef4444";
   }
-}
+});

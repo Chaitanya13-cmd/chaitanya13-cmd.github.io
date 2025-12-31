@@ -30,4 +30,17 @@ a {
 h1 {
   text-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
 }
+button {
+  padding: 10px 20px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
 

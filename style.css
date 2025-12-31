@@ -48,11 +48,14 @@ button:hover {
   width: 60px;
   height: 60px;
   background: red;
-  position: relative;
-  margin: 20px auto;
+  position: absolute;   /* VERY IMPORTANT */
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
   border-radius: 10px;
 }
+
 
 
 

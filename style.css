@@ -74,15 +74,13 @@ button:hover {
 #game-box {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #ef4444, #f97316);
+  background: red;
   position: absolute;
-  top: 320px;
+  top: 600px;          /* 👈 neeche dhakel diya */
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 12px;
   cursor: pointer;
-  box-shadow: 0 0 20px rgba(239,68,68,0.8);
-  z-index: 1000;   /* only this is needed */
+  z-index: 5;          /* 👈 kam rakha */
 }
 
 .card {
@@ -113,6 +111,7 @@ input {
   z-index: 10;
   margin-top: 40px;
 }
+
 
 
 

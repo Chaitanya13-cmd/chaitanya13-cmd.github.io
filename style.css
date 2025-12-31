@@ -44,5 +44,15 @@ button:hover {
   background: #16a34a;
 }
 
+#game-box {
+  width: 60px;
+  height: 60px;
+  background: red;
+  position: relative;
+  margin: 20px auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
 
 

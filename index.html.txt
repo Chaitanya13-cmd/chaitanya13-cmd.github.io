@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Gaming Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>🎮 My Gaming Zone</h1>
+  <p>Welcome to my gaming world!</p>
+
+  <h2>🔥 Games I Play</h2>
+  <ul>
+    <li>BGMI</li>
+    <li>GTA V</li>
+    <li>Valorant</li>
+    <li>Minecraft</li>
+  </ul>
+
+  <h2>📺 YouTube</h2>
+  <a href="https://youtube.com" target="_blank">Visit My Channel</a>
+</body>
+</html>

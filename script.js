@@ -8,7 +8,7 @@ box.addEventListener("click", () => {
   scoreText.innerText = score;
 
   const x = Math.random() * 300;
-  const y = Math.random() * 200;
+  const y = Math.random() * 300;
 
   box.style.left = x + "px";
   box.style.top = y + "px";

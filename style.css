@@ -185,6 +185,22 @@ input {
 
 
 
+#memoryDisplay {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+#memoryInput {
+  padding: 10px;
+  width: 180px;
+  text-align: center;
+}
+
+#memoryResult {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
 
 
 

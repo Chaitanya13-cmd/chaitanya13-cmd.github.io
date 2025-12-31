@@ -103,7 +103,8 @@ input {
 #result {
   margin-top: 15px;
   font-size: 18px;
-  font-weight: bold;
+  min-height: 24px;
+  color: white;
 }
 
 .guess-game {
@@ -117,14 +118,11 @@ body {
   font-family: Arial;
 }
 
-.guess-game {
-  margin-top: 40px;
-}
-
 button {
   padding: 10px 20px;
   cursor: pointer;
 }
+
 
 
 

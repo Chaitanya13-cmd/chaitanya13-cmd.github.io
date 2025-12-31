@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (Number(guess) === secretNumber) {
       result.innerText = "🎉 OP! Sahi jawab 🔥";
+      result.innerText = "🔥 BUTTON CLICK HO RAHA HAI";
       result.style.color = "lime";
     } else {
       result.innerText =
@@ -35,3 +36,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+

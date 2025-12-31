@@ -94,6 +94,19 @@ button:hover {
   backdrop-filter: blur(10px);
 }
 
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+  width: 150px;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 
 

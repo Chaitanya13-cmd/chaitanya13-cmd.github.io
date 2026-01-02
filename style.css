@@ -202,6 +202,24 @@ input {
 }
 
 
+#memoryDisplay {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+#memoryInput {
+  padding: 10px;
+  width: 220px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#memoryResult {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 
 

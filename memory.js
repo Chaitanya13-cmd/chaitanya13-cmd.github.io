@@ -70,4 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("bar").style.width =
   Math.min(level * 10, 100) + "%";
 
+let best = localStorage.getItem("bestLevel") || 1;
+document.getElementById("best").innerText = best;
+
+if (level > best) {
+  best = level;
+  localStorage.setItem("bestLevel", best);
+}
+
 

@@ -189,6 +189,24 @@ button {
   font-size: 18px;
 }
 
+#aimArea {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #555;
+  margin: 15px auto;
+  position: relative;
+  background: #111;
+}
+
+.target {
+  width: 35px;
+  height: 35px;
+  background: #22c55e;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
 
 
 

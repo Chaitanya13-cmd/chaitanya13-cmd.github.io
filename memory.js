@@ -1,51 +1,62 @@
-const emojis = ["😀", "🔥", "💀", "😈", "👀", "⚡", "🎯", "🚀"];
+document.addEventListener("DOMContentLoaded", () => {
 
-let level = 1;
-let sequence = [];
+  const emojis = ["😀", "🔥", "💀", "😈", "👀", "⚡", "🎯", "🚀"];
 
-const levelText = document.getElementById("level");
-const display = document.getElementById("memoryDisplay");
-const startBtn = document.getElementById("startMemory");
-const input = document.getElementById("memoryInput");
-const checkBtn = document.getElementById("checkMemory");
-const result = document.getElementById("memoryResult");
+  let level = 1;
+  let sequence = [];
 
-function generateSequence() {
-  sequence = [];
-  for (let i = 0; i < level + 2; i++) {
-    sequence.push(emojis[Math.floor(Math.random() * emojis.length)]);
-  }
-}
+  const levelText = document.getElementById("level");
+  const display = document.getElementById("memoryDisplay");
+  const startBtn = document.getElementById("startMemory");
+  const input = document.getElementById("memoryInput");
+  const checkBtn = document.getElementById("checkMemory");
+  const result = document.getElementById("memoryResult");
 
-startBtn.addEventListener("click", () => {
-  generateSequence();
-  display.innerText = sequence.join(" ");
-  result.innerText = "";
-  input.value = "";
-
-  // show time decreases as level increases
-  const showTime = Math.max(400, 1200 - level * 150);
-
-  setTimeout(() => {
-    display.innerText = "❓ ❓ ❓";
-  }, showTime);
-});
-
-checkBtn.addEventListener("click", () => {
-  if (!input.value) {
-    result.innerText = "😐 Type the emojis bro";
+  // SAFETY CHECK
+  if (!startBtn || !checkBtn) {
+    console.error("Memory game elements missing");
     return;
   }
 
-  if (input.value === sequence.join("")) {
-    result.innerText = "🎉 LEVEL UP! GG 🔥";
-    result.style.color = "lime";
-    level++;
-    levelText.innerText = level;
-  } else {
-    result.innerText = "💀 Wrong! Back to Level 1 😈";
-    result.style.color = "red";
-    level = 1;
-    levelText.innerText = level;
+  function generateSequence() {
+    sequence = [];
+    for (let i = 0; i < level + 2; i++) {
+      sequence.push(
+        emojis[Math.floor(Math.random() * emojis.length)]
+      );
+    }
   }
+
+  startBtn.addEventListener("click", () => {
+    generateSequence();
+    display.innerText = sequence.join(" ");
+    input.value = "";
+    result.innerText = "";
+
+    const showTime = Math.max(500, 1200 - level * 150);
+
+    setTimeout(() => {
+      display.innerText = "❓ ❓ ❓";
+    }, showTime);
+  });
+
+  checkBtn.addEventListener("click", () => {
+    if (!input.value) {
+      result.innerText = "😐 Kuch likh toh sahi";
+      return;
+    }
+
+    if (input.value === sequence.join("")) {
+      result.innerText = "🎉 LEVEL UP! 🔥";
+      result.style.color = "lime";
+      level++;
+      levelText.innerText = level;
+    } else {
+      result.innerText = "💀 Galat! Level reset 😈";
+      result.style.color = "red";
+      level = 1;
+      levelText.innerText = level;
+    }
+  });
+
 });

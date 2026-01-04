@@ -190,22 +190,24 @@ button {
 }
 
 #aimArea {
-  width: 300px;
-  height: 200px;
-  border: 2px solid #555;
-  margin: 15px auto;
+  width: 320px;
+  height: 220px;
+  border: 3px solid white;
+  margin: 20px auto;
   position: relative;
   background: #111;
 }
 
 .target {
-  width: 35px;
-  height: 35px;
-  background: #22c55e;
+  width: 30px;
+  height: 30px;
+  background: lime;
   border-radius: 50%;
   position: absolute;
   cursor: pointer;
 }
+
+
 
 
 

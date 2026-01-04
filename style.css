@@ -173,6 +173,22 @@ button {
   font-size: 18px;
 }
 
+#typingSentence {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+#typingInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#typingResult {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
 
 
 

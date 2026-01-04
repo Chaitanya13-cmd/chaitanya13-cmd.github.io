@@ -18,38 +18,6 @@ h1 {
   text-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
 }
 
-/* Rage button glow */
-.rage-btn {
-  background: linear-gradient(135deg, red, darkred);
-  color: white;
-  padding: 15px 35px;
-  border: none;
-  border-radius: 14px;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: 0 0 20px red;
-  transition: transform 0.1s, box-shadow 0.1s;
-}
-
-.rage-btn:hover {
-  box-shadow: 0 0 35px red;
-}
-
-.rage-btn:active {
-  transform: scale(0.95);
-}
-
-/* Text */
-#rageText {
-  margin-top: 15px;
-  font-size: 20px;
-}
-
-#rageLevel {
-  margin-top: 5px;
-  font-weight: bold;
-}
-
 p {
   opacity: 0.85;
   margin-bottom: 20px;
@@ -136,55 +104,6 @@ input {
   color: white;
 }
 
-
-.rage-btn {
-  background: red;
-  color: white;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.rage-btn:hover {
-  background: darkred;
-}
-
-#rageText {
-  margin-top: 15px;
-  font-size: 18px;
-}
-
-.rage-btn {
-  background: linear-gradient(135deg, red, darkred);
-  color: white;
-  padding: 15px 35px;
-  border: none;
-  border-radius: 12px;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: 0 0 15px red;
-  transition: transform 0.1s;
-}
-
-.rage-btn:active {
-  transform: scale(0.95);
-}
-
-#rageText {
-  margin-top: 15px;
-  font-size: 20px;
-}
-
-#rageLevel {
-  margin-top: 5px;
-  font-weight: bold;
-}
-
-
-
 #memoryDisplay {
   font-size: 28px;
   margin: 15px 0;
@@ -232,6 +151,25 @@ input {
   width: 0%;
   background: lime;
   border-radius: 10px;
+}
+
+#factText {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+
+#factResult {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 

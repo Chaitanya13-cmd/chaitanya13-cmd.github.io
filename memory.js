@@ -67,4 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+document.getElementById("bar").style.width =
+  Math.min(level * 10, 100) + "%";
+
 

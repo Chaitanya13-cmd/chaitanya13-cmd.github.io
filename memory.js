@@ -18,14 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  function generateSequence() {
-    sequence = [];
-    for (let i = 0; i < level + 2; i++) {
-      sequence.push(
-        emojis[Math.floor(Math.random() * emojis.length)]
-      );
-    }
+ function generateSequence() {
+  sequence = [];
+
+  // 👇 ek-ek karke emoji increase
+  let emojiCount = level + 2; 
+  // Level 1 = 3 emojis, Level 2 = 4, etc.
+
+  for (let i = 0; i < emojiCount; i++) {
+    sequence.push(
+      emojis[Math.floor(Math.random() * emojis.length)]
+    );
   }
+}
 
   startBtn.addEventListener("click", () => {
     generateSequence();
@@ -60,3 +65,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+

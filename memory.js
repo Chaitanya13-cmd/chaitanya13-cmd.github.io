@@ -38,7 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     input.value = "";
     result.innerText = "";
 
-    const showTime = Math.max(500, 1200 - level * 150);
+  let showTime = Math.max(400, 1200 - level * 100);
+
 
     setTimeout(() => {
       display.innerText = "❓ ❓ ❓";
@@ -65,4 +66,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
 

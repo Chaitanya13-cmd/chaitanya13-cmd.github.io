@@ -220,6 +220,20 @@ input {
   font-weight: bold;
 }
 
+#progress {
+  width: 200px;
+  height: 10px;
+  background: #333;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+#bar {
+  height: 100%;
+  width: 0%;
+  background: lime;
+  border-radius: 10px;
+}
+
 
 
 

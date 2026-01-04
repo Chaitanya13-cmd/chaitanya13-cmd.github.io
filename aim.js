@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const scoreText = document.getElementById("aimScore");
   const result = document.getElementById("aimResult");
 
-  if (!startBtn || !area) return;
+  if (!startBtn || !area) {
+    console.error("Aim Trainer elements missing");
+    return;
+  }
 
   let time = 10;
   let score = 0;
@@ -14,11 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function spawnTarget() {
     area.innerHTML = "";
+
     const target = document.createElement("div");
     target.className = "target";
 
-    const x = Math.random() * (area.clientWidth - 40);
-    const y = Math.random() * (area.clientHeight - 40);
+    const maxX = area.clientWidth - 30;
+    const maxY = area.clientHeight - 30;
+
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
 
     target.style.left = x + "px";
     target.style.top = y + "px";
@@ -56,4 +63,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
-

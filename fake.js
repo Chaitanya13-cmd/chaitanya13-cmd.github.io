@@ -4,10 +4,13 @@ const facts = [
   { text: "JavaScript is the same as Java.", answer: false },
   { text: "The Earth revolves around the Sun.", answer: true },
   { text: "2 + 2 = 5", answer: false },
-  { text: "Light travels faster than sound.", answer: true }
+  { text: "Light travels faster than sound.", answer: true },
+  { text: "Bananas grow on trees.", answer: false },
+  { text: "HTML is a programming language.", answer: false },
+  { text: "Water boils at 100°C.", answer: true }
 ];
 
-let current = {};
+let currentFact = null;
 
 const factText = document.getElementById("factText");
 const result = document.getElementById("factResult");
@@ -15,17 +18,19 @@ const trueBtn = document.getElementById("trueBtn");
 const falseBtn = document.getElementById("falseBtn");
 const nextBtn = document.getElementById("nextFact");
 
-function loadFact() {
-  current = facts[Math.floor(Math.random() * facts.length)];
-  factText.innerText = current.text;
+function loadRandomFact() {
+  const randomIndex = Math.floor(Math.random() * facts.length);
+  currentFact = facts[randomIndex];
+  factText.innerText = currentFact.text;
   result.innerText = "";
 }
 
-trueBtn.addEventListener("click", () => check(true));
-falseBtn.addEventListener("click", () => check(false));
+// button clicks
+trueBtn.addEventListener("click", () => checkAnswer(true));
+falseBtn.addEventListener("click", () => checkAnswer(false));
 
-function check(choice) {
-  if (choice === current.answer) {
+function checkAnswer(choice) {
+  if (choice === currentFact.answer) {
     result.innerText = "😎 Correct! Brain OP";
     result.style.color = "lime";
   } else {
@@ -34,7 +39,8 @@ function check(choice) {
   }
 }
 
-nextBtn.addEventListener("click", loadFact);
+// next = just load again (no end)
+nextBtn.addEventListener("click", loadRandomFact);
 
-// start first fact
-loadFact();
+// start game
+loadRandomFact();

@@ -206,6 +206,10 @@ button {
   cursor: pointer;
 }
 
+#mathQ { font-size: 22px; margin: 10px 0; }
+#mathInput { padding: 8px; width: 120px; }
+#mathResult { margin-top: 10px; font-size: 18px; }
+
 
 
 

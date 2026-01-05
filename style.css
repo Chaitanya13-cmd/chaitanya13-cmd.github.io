@@ -210,6 +210,23 @@ button {
 #mathInput { padding: 8px; width: 120px; }
 #mathResult { margin-top: 10px; font-size: 18px; }
 
+#countryEmoji {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+#countryInput {
+  padding: 8px;
+  width: 200px;
+  text-align: center;
+}
+
+#countryResult {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 
 

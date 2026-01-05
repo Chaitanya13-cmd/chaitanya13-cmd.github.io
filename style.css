@@ -367,6 +367,15 @@ button:hover {
   text-shadow: none !important;
 }
 
+.game-section {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 700px;
+}
+
 
 
 

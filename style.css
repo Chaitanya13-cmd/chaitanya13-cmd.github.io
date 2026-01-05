@@ -418,6 +418,90 @@ button:hover {
   font-weight: bold;
 }
 
+/* 🌙 MIDNIGHT PURPLE THEME */
+
+body {
+  background: linear-gradient(180deg, #0b0618, #120a2a);
+  color: #f3f4f6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Game sections (cards) */
+.game-section {
+  background: #140b2e;
+  border: 1px solid #2a1b5e;
+  border-radius: 14px;
+  padding: 22px;
+  margin: 28px auto;
+  max-width: 760px;
+}
+
+/* Game titles */
+h2 {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  margin: 10px 0 16px !important;
+  letter-spacing: 1px !important;
+  color: #e9d5ff !important;
+  text-shadow: none !important;
+  border-left: 4px solid #a78bfa;
+  padding-left: 12px;
+}
+
+/* Buttons */
+button {
+  background: #1b1140;
+  color: #f3f4f6;
+  border: 1px solid #3b2a7a;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #24155a;
+}
+
+/* Inputs */
+input {
+  background: #0f0828;
+  color: #f3f4f6;
+  border: 1px solid #3b2a7a;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Aim trainer fix (purple-safe contrast) */
+#aimArea {
+  background: #0b0618;
+  border: 2px solid #3b2a7a;
+}
+
+.target {
+  background: #22c55e;   /* bright green for visibility */
+  border: 2px solid #dcfce7;
+}
+
+/* Slot machine */
+.slotItem {
+  background: #0f0828 !important;
+  border: 1px solid #3b2a7a !important;
+  box-shadow: none !important;
+}
+
+/* Result text */
+#slotResult,
+#aimResult,
+#typingResult,
+#mathResult,
+#countryResult,
+#lieResult,
+#oddResult,
+#roastResult,
+#dotResult {
+  text-shadow: none !important;
+}
+
 
 
 

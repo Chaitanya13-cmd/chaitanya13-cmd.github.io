@@ -359,6 +359,23 @@ button:hover {
   max-width: 700px;
 }
 
+#dotArea {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #334155;
+  margin: 15px auto;
+  position: relative;
+  background: #020617;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+}
+
 
 
 

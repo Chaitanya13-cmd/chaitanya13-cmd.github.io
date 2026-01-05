@@ -210,19 +210,6 @@ button {
 #mathInput { padding: 8px; width: 120px; }
 #mathResult { margin-top: 10px; font-size: 18px; }
 
-#secretInput {
-  padding: 10px;
-  width: 220px;
-  text-align: center;
-}
-
-#secretResult {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-
 
 
 

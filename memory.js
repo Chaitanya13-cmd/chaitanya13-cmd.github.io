@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const emojis = ["😀", "🔥", "💀", "😈", "👀", "⚡", "🎯", "🚀"];
+  const emojis = ["💫", "🔥", "✨", "😈", "👀", "⚡", "🎯", "❤️‍🔥"];
 
   let level = 1;
   let sequence = [];
@@ -77,5 +77,6 @@ if (level > best) {
   best = level;
   localStorage.setItem("bestLevel", best);
 }
+
 
 

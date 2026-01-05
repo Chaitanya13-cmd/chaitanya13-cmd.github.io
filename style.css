@@ -376,6 +376,30 @@ button:hover {
   position: absolute;
 }
 
+#lieList {
+  list-style: none;
+  padding: 0;
+}
+
+.lieItem {
+  background: #020617;
+  border: 1px solid #334155;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lieItem:hover {
+  background: #1e293b;
+}
+
+#lieResult {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 
 

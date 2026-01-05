@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const emojis = ["🍒", "🍋", "🍉", "⭐", "💎", "🔥"];
+  const emojis = ["🍒", "❤️‍🔥", "✨", "💫", "💎", "🔥"];
 
   const items = document.querySelectorAll(".slotItem");
   const spinBtn = document.getElementById("spinSlot");
@@ -30,4 +30,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
 

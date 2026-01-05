@@ -227,6 +227,32 @@ button {
   font-weight: bold;
 }
 
+#slot {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.slotItem {
+  background: #111;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+#spinSlot {
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#slotResult {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 
 

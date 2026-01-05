@@ -337,6 +337,53 @@ h2 {
     0 0 45px #0284c7 !important;
 }
 
+/* 🎮 CLEAN DARK GAMING THEME */
+
+body {
+  background: #0f172a;       /* deep slate */
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Game titles */
+h2 {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  margin: 32px 0 16px !important;
+  letter-spacing: 1px !important;
+  color: #f8fafc !important;
+  text-shadow: none !important;
+  border-left: 4px solid #38bdf8;
+  padding-left: 12px;
+}
+
+/* Buttons – clean */
+button {
+  background: #1e293b;
+  color: #f8fafc;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #334155;
+}
+
+/* Slot items clean */
+.slotItem {
+  background: #020617 !important;
+  border: 1px solid #334155 !important;
+  box-shadow: none !important;
+}
+
+/* Result text */
+#slotResult {
+  text-shadow: none !important;
+}
+
 
 
 

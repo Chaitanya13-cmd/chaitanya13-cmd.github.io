@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("checkSecret");
   const result = document.getElementById("secretResult");
 
-  if (!btn) return;
+  if (!btn) {
+    console.error("Secret elements missing");
+    return;
+  }
 
   btn.addEventListener("click", () => {
     const code = input.value.trim().toLowerCase();
@@ -15,19 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (code === "gg") {
-      result.innerText = "🎉 GG UNLOCKED! Respect +10";
+      result.innerText = "🎉 GG UNLOCKED!";
       result.style.color = "lime";
-    } 
-    else if (code === "brain") {
-      result.innerText = "🧠 BRAIN MODE ON! You smart fr";
+    } else if (code === "brain") {
+      result.innerText = "🧠 Brain mode ON!";
       result.style.color = "cyan";
-    } 
-    else if (code === "oops") {
-      result.innerText = "😈 OOPS MODE… try again";
-      result.style.color = "orange";
-    } 
-    else {
-      result.innerText = "❌ Wrong code! Try harder 😏";
+    } else {
+      result.innerText = "❌ Wrong code 😈";
       result.style.color = "red";
     }
 

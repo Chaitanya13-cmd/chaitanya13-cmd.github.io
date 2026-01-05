@@ -189,22 +189,26 @@ button {
   font-size: 18px;
 }
 
+/* AIM TRAINER FIX */
+
 #aimArea {
-  width: 300px;
-  height: 200px;
-  background: red;        /* TEMP test color */
-  border: 5px solid yellow;
+  width: 320px;
+  height: 220px;
+  background: #020617;        /* dark background */
+  border: 2px solid #334155;
   margin: 20px auto;
+  position: relative;
 }
 
 .target {
   width: 30px;
   height: 30px;
-  background: lime;
+  background: #22c55e;        /* bright green */
   border-radius: 50%;
   position: absolute;
   cursor: pointer;
 }
+
 
 #mathQ { font-size: 22px; margin: 10px 0; }
 #mathInput { padding: 8px; width: 120px; }
@@ -354,6 +358,7 @@ button:hover {
   margin: 30px auto;
   max-width: 700px;
 }
+
 
 
 

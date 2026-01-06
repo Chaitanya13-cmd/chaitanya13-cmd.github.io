@@ -502,6 +502,25 @@ input {
   text-shadow: none !important;
 }
 
+#logoOnly {
+  width: 180px;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  display: block;
+  margin: 15px auto;
+}
+
+#logoOptions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.logoBtn {
+  padding: 12px;
+}
+
 
 
 

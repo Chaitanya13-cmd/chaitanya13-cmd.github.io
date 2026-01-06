@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { line: "Bro thought he ___", answer: "cooked" },
     { line: "Confidence high, skill ___", answer: "low" },
     { line: "Game strong, brain ___", answer: "weak" },
-    { line: "Lagging in real life ___", answer: "too" }
+    { line: "Lagging in real ___", answer: "life" }
   ];
 
   const text = document.getElementById("roastText");
@@ -42,3 +42,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+

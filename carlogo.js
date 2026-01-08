@@ -67,3 +67,4 @@ nextCar.onclick = loadCarGame;
 
 // 🚀 first question
 loadCarGame();
+

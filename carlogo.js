@@ -1,5 +1,5 @@
 const cars = [
-  "Audi","BMW","Mercedes","Toyota","Honda",
+  "Audi","BMW2","Mercedes","Toyota","Honda",
   "Hyundai","Kia","Tata","Mahindra","Ford",
   "Chevrolet","Volkswagen","Nissan","Renault",
   "Skoda","Volvo","Jaguar","Porsche",
@@ -67,4 +67,5 @@ nextCar.onclick = loadCarGame;
 
 // 🚀 first question
 loadCarGame();
+
 

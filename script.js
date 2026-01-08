@@ -1,23 +1,37 @@
-let score = 0;
+const streakDisplay = document.getElementById("dailyStreak");
 
-const box = document.getElementById("game-box");
-const scoreText = document.getElementById("score");
-const clickSound = document.getElementById("clickSound");
-
-if (box) {
-  box.addEventListener("click", () => {
-    if (clickSound) {
-      clickSound.currentTime = 0;
-      clickSound.play();
-    }
-
-    score++;
-    scoreText.innerText = score;
-
-    const x = Math.random() * 300;
-    const y = Math.random() * 300;
-
-    box.style.left = x + "px";
-    box.style.top = y + "px";
-  });
+function getToday() {
+  return new Date().toDateString();
 }
+
+function checkDailyStreak() {
+  let lastVisit = localStorage.getItem("lastVisit");
+  let streak = Number(localStorage.getItem("streak")) || 0;
+  const today = getToday();
+
+  if (!lastVisit) {
+    // first visit ever
+    streak = 1;
+  } 
+  else {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+
+    if (lastVisit === today) {
+      // same day → do nothing
+    } 
+    else if (lastVisit === yesterday.toDateString()) {
+      streak += 1; // continued streak
+    } 
+    else {
+      streak = 1; // streak broken
+    }
+  }
+
+  localStorage.setItem("streak", streak);
+  localStorage.setItem("lastVisit", today);
+
+  streakDisplay.textContent = streak;
+}
+
+checkDailyStreak();

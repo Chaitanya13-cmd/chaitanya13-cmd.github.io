@@ -625,12 +625,17 @@ input {
   cursor: pointer;
 }
 
+.game-section {
+  position: relative;
+  z-index: 1;
+}
 
 .game-card {
   position: relative;
   z-index: 50;
   pointer-events: auto;
 }
+
 
 
 

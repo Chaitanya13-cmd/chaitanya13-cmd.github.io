@@ -626,6 +626,12 @@ input {
 }
 
 
+.game-card {
+  position: relative;
+  z-index: 50;
+  pointer-events: auto;
+}
+
 
 
 

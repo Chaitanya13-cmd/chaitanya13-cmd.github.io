@@ -1,28 +1,32 @@
+document.addEventListener("DOMContentLoaded", () => {
 
-checkDailyStreak();
+  const modal = document.getElementById("gameModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalDesc = document.getElementById("modalDesc");
+  const playBtn = document.getElementById("playBtn");
+  const closeBtn = document.querySelector(".close-btn");
 
-const modal = document.getElementById("gameModal");
-const modalTitle = document.getElementById("modalTitle");
-const modalDesc = document.getElementById("modalDesc");
-const playBtn = document.getElementById("playBtn");
+  let currentTarget = "";
 
-let targetGameId = "";
+  document.querySelectorAll(".game-card").forEach(card => {
+    card.addEventListener("click", () => {
+      modalTitle.textContent = card.dataset.title;
+      modalDesc.textContent = card.dataset.desc;
+      currentTarget = card.dataset.target;
+      modal.style.display = "block";
+    });
+  });
 
-function openModal(title, desc, gameId) {
-  modalTitle.textContent = title;
-  modalDesc.textContent = desc;
-  targetGameId = gameId;
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
 
-  modal.style.display = "block";
-}
+  playBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    const target = document.getElementById(currentTarget);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 
-function closeModal() {
-  modal.style.display = "none";
-}
-
-playBtn.onclick = () => {
-  closeModal();
-  document.getElementById(targetGameId)
-    .scrollIntoView({ behavior: "smooth" });
-};
-
+});

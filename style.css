@@ -531,6 +531,64 @@ input {
   cursor: pointer;
 }
 
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(180deg, #120018, #1d0026);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #c084fc;
+  margin-bottom: 25px;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-stats div {
+  background: #1d0026;
+  padding: 10px 16px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(168,85,247,0.4);
+}
+
+.games {
+  padding: 30px 20px;
+}
+
+.games h2 {
+  margin: 25px 0 15px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.game-card {
+  background: #1d0026;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(168,85,247,0.6);
+}
+
 
 
 

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.modal {
+  z-index: 9999;
+}
+
 body {
   background: radial-gradient(circle at top, #020617, #000);
   color: white;
@@ -635,6 +639,7 @@ input {
   z-index: 50;
   pointer-events: auto;
 }
+
 
 
 

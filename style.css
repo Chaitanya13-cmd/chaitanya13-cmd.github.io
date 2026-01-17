@@ -1,57 +1,45 @@
-/* ===== GLOBAL RESET ===== */
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
-  padding: 0;
-  background: linear-gradient(180deg, #0b0618, #120a2a);
+  background: linear-gradient(180deg,#0b0618,#120a2a);
   color: #f3f4f6;
-  font-family: system-ui, Arial, sans-serif;
+  font-family: system-ui, sans-serif;
   text-align: center;
 }
 
-/* ===== HERO ===== */
 .hero {
   padding: 50px 20px;
-  background: linear-gradient(180deg, #120018, #1d0026);
+  background: linear-gradient(180deg,#120018,#1d0026);
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #e9d5ff;
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.hero p {
-  color: #c084fc;
+.hero-stats div {
+  background: #1d0026;
+  padding: 10px 16px;
+  border-radius: 12px;
 }
 
-/* ===== GAME CARDS ===== */
 .games {
-  margin: 30px auto;
   max-width: 1000px;
+  margin: 40px auto;
 }
 
 .game-card {
   display: inline-block;
   background: #1d0026;
-  margin: 10px;
   padding: 20px;
+  margin: 10px;
   border-radius: 16px;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  z-index: 10;
-  position: relative;
 }
 
-.game-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(168,85,247,0.6);
-}
-
-/* ===== GAME SECTIONS ===== */
 .game-section {
   background: #140b2e;
   border: 1px solid #2a1b5e;
@@ -61,37 +49,20 @@ body {
   max-width: 760px;
 }
 
-/* ===== BUTTONS ===== */
 button {
-  padding: 10px 18px;
-  border-radius: 10px;
-  border: none;
   background: #a855f7;
-  color: black;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
 }
 
-button:hover {
-  background: #c084fc;
-}
-
-/* ===== INPUTS ===== */
-input {
-  background: #0f0828;
-  color: #f3f4f6;
-  border: 1px solid #3b2a7a;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-/* ===== MODAL ===== */
 .modal {
   display: none;
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(6px);
   z-index: 9999;
 }
 
@@ -101,16 +72,4 @@ input {
   margin: 15% auto;
   padding: 25px;
   border-radius: 18px;
-}
-
-/* ===== IMAGES ===== */
-#carLogo {
-  width: 180px;
-  height: 120px;
-  object-fit: contain;
-  margin: 10px 0;
-}
-
-.game-card {
-  pointer-events: auto;
 }

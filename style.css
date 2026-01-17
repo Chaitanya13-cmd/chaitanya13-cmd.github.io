@@ -1,7 +1,15 @@
+
 * {
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background: #120018;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 #allGames {
@@ -568,6 +576,7 @@ input {
   border-radius: 14px;
   box-shadow: 0 0 12px rgba(168,85,247,0.4);
 }
+
 
 
 

@@ -434,7 +434,6 @@ button:hover {
   font-weight: bold;
 }
 
-/* 🌙 MIDNIGHT PURPLE THEME */
 
 body {
   background: linear-gradient(180deg, #0b0618, #120a2a);
@@ -442,7 +441,6 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Game sections (cards) */
 .game-section {
   background: #140b2e;
   border: 1px solid #2a1b5e;
@@ -452,7 +450,6 @@ body {
   max-width: 760px;
 }
 
-/* Game titles */
 h2 {
   font-size: 30px !important;
   font-weight: 700 !important;
@@ -464,7 +461,6 @@ h2 {
   padding-left: 12px;
 }
 
-/* Buttons */
 button {
   background: #1b1140;
   color: #f3f4f6;
@@ -478,7 +474,6 @@ button:hover {
   background: #24155a;
 }
 
-/* Inputs */
 input {
   background: #0f0828;
   color: #f3f4f6;
@@ -487,25 +482,22 @@ input {
   padding: 10px;
 }
 
-/* Aim trainer fix (purple-safe contrast) */
 #aimArea {
   background: #0b0618;
   border: 2px solid #3b2a7a;
 }
 
 .target {
-  background: #22c55e;   /* bright green for visibility */
+  background: #22c55e;   
   border: 2px solid #dcfce7;
 }
 
-/* Slot machine */
 .slotItem {
   background: #0f0828 !important;
   border: 1px solid #3b2a7a !important;
   box-shadow: none !important;
 }
 
-/* Result text */
 #slotResult,
 #aimResult,
 #typingResult,
@@ -520,9 +512,9 @@ input {
 
 #studyLogo,
 #logoOnly {
-  width: 140px;        /* 👈 controlled size */
-  height: 140px;       /* sab equal dikhenge */
-  object-fit: contain; /* logo cut nahi hoga */
+  width: 140px;       
+  height: 140px;      
+  object-fit: contain; 
   background: white;
   padding: 10px;
   border-radius: 12px;
@@ -577,6 +569,20 @@ input {
   box-shadow: 0 0 12px rgba(168,85,247,0.4);
 }
 
+
+button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #a855f7;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c084fc;
+}
 
 
 

@@ -584,6 +584,15 @@ button:hover {
   background: #c084fc;
 }
 
+.game-card {
+  display: inline-block;
+  background: #1d0026;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
 
 
 

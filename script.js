@@ -21,13 +21,17 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.style.display = "none";
   });
 
-  playBtn.addEventListener("click", () => {
+ playBtn.addEventListener("click", () => {
   modal.style.display = "none";
 
-  document.getElementById("allGames").style.display = "block";
+  const gamesBox = document.getElementById("allGames");
+  gamesBox.style.display = "block";
 
-  const target = document.getElementById(currentTarget);
-  if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
-  }
+  // IMPORTANT: thoda delay so DOM ready ho
+  setTimeout(() => {
+    const target = document.getElementById(currentTarget);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  }, 100);
 });

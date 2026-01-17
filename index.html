@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chaitanya Gaming Zone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===== HERO ===== -->
 <header class="hero">
   <h1>🎮 Chaitanya Gaming Zone</h1>
   <p>Traveller | Future Youtuber | Gamer</p>
   <p>Play. Learn. Improve your brain daily.</p>
-
-  <div id="allGames">
-  <!-- memory flash,pattern breaker,quick math rush,guess the country,aim trainer,speed typing,guess the lie,guess the roast,study logo,car logo -->
-</div>
 
   <div class="hero-stats">
     <div>🔥 Streak: <span id="dailyStreak">0</span></div>
@@ -16,38 +22,38 @@
   </div>
 </header>
 
-  <div class="game-section" id="memory">
-    <div class="game-card" onclick="document.getElementById('memory').scrollIntoView({behavior:'smooth'})">
-  🧠 Memory Flash
-</div>
+<!-- ===== GAME CARDS ===== -->
+<section class="games">
 
-  <section class="games">
-  <h2>🧠 Brain Games</h2>
-
-  <div class="game-grid">
-    <div> class="game-card">🧠 Memory Flash</div>
-    <div> class="game-card">🧩 Pattern Breaker</div>
-    <div> class="game-card">🧮 Quick Math Rush</div>
-    <div> class="game-card">🌍 Guess the Country</div>
+  <div class="game-card" data-title="🧠 Memory Flash" data-desc="Remember the emoji sequence." data-target="memory">
+    🧠 Memory Flash
   </div>
 
-  <h2>🎯 Skill & Speed</h2>
-  <div> class="game-grid">
-    <div> class="game-card">🎯 Aim Trainer</div>
-    <div> class="game-card">⌨️ Speed Typing</div>
+  <div class="game-card" data-title="🧩 Pattern Breaker" data-desc="Guess the emoji pattern." data-target="pattern">
+    🧩 Pattern Breaker
   </div>
 
-  <h2>😈 Fun & Challenge</h2>
-  <div class="game-grid">
-    <div> class="game-card">🕵️ Guess the Lie</div>
-    <div> class="game-card">😈 Guess the Roast</div>
-    <div> class="game-card">📚 Study Logo</div>
-    <div> class="game-card">🚗 Car Logo</div>
+  <div class="game-card" data-title="🎯 Aim Trainer" data-desc="Test your reaction speed." data-target="aim">
+    🎯 Aim Trainer
   </div>
+
+  <div class="game-card" data-title="😈 Guess the Roast" data-desc="Hard mode roast challenge." data-target="roast">
+    😈 Guess the Roast
+  </div>
+
+  <div class="game-card" data-title="📚 Study Logo" data-desc="Guess study platform logos." data-target="studylogo">
+    📚 Guess the Study Logo
+  </div>
+
+  <div class="game-card" data-title="🚗 Car Logo" data-desc="Guess car brand logos." data-target="carlogo">
+    🚗 Guess the Car Logo
+  </div>
+
 </section>
 
-<div> id="gameModal" class="modal">
-  <div> class="modal-content">
+<!-- ===== MODAL ===== -->
+<div id="gameModal" class="modal">
+  <div class="modal-content">
     <span class="close-btn">×</span>
     <h2 id="modalTitle"></h2>
     <p id="modalDesc"></p>
@@ -55,187 +61,22 @@
   </div>
 </div>
 
-<section class="games">
+<!-- ===== GAMES (HIDDEN BY DEFAULT) ===== -->
+<div id="allGames" style="display:none;">
 
-  <div class="game-card"
-       data-title="🧠 Memory Flash"
-       data-desc="Remember the emoji sequence. Level badhta jaayega."
-       data-target="memory">
-    🧠 Memory Flash
-  </div>
+  <div class="game-section" id="memory"><h2>🧠 Memory Flash</h2></div>
+  <div class="game-section" id="pattern"><h2>🧩 Pattern Breaker</h2></div>
+  <div class="game-section" id="aim"><h2>🎯 Aim Trainer</h2></div>
+  <div class="game-section" id="roast"><h2>😈 Guess the Roast</h2></div>
+  <div class="game-section" id="studylogo"><h2>📚 Study Logo</h2></div>
+  <div class="game-section" id="carlogo"><h2>🚗 Car Logo</h2></div>
 
-  <div> class="game-card"
-       data-title="🧩 Pattern Breaker"
-       data-desc="Emoji pattern samjho aur next pattern guess karo."
-       data-target="pattern">
-    🧩 Pattern Breaker
-  </div>
+</div>
 
-  <div> class="game-card"
-       data-title="🕵️ Spot the Fake"
-       data-desc="Fact ya fake? Dimag lagao aur sahi choose karo."
-       data-target="fake">
-    🕵️ Spot the Fake
-  </div>
-
-  <div> class="game-card"
-       data-title="⌨️ Speed Typing"
-       data-desc="Kitni fast typing hai? Time ke against test karo."
-       data-target="typing">
-    ⌨️ Speed Typing
-  </div>
-
-  <div> class="game-card"
-       data-title="🎯 Aim Trainer"
-       data-desc="Aim aur reaction speed improve karo."
-       data-target="aim">
-    🎯 Aim Trainer
-  </div>
-
-  <div> class="game-card"
-       data-title="🧮 Quick Math Rush"
-       data-desc="Fast math questions. Galti = pressure 😈"
-       data-target="math">
-    🧮 Quick Math Rush
-  </div>
-
-  <div> class="game-card"
-       data-title="🌍 Guess the Country"
-       data-desc="Emoji se country guess karo."
-       data-target="country">
-    🌍 Guess the Country
-  </div>
-
-  <div> class="game-card"
-       data-title="🎰 Emoji Slot Machine"
-       data-desc="Spin karo aur dekho luck saath deta hai ya nahi."
-       data-target="slot">
-    🎰 Emoji Slot Machine
-  </div>
-
-  <div> class="game-card"
-       data-title="🧠 Guess the Memory Count"
-       data-desc="Dots ya objects count karke yaad rakho."
-       data-target="dots">
-    🧠 Guess the Memory Count
-  </div>
-
-  <div> class="game-card"
-       data-title="🕵️ Guess the Lie"
-       data-desc="3 statements, 1 jhooth. Pakdo usse."
-       data-target="lie">
-    🕵️ Guess the Lie
-  </div>
-
-  <div> class="game-card"
-       data-title="😈 Guess the Roast (Hard)"
-       data-desc="Blank fill karo. Hard mode only 😤"
-       data-target="roast">
-    😈 Guess the Roast
-  </div>
-
-  <div> class="game-card"
-       data-title="📚 Guess the Study Logo"
-       data-desc="Study platforms ke logo pehchaano."
-       data-target="studylogo">
-    📚 Guess the Study Logo
-  </div>
-
-  <div> class="game-card"
-       data-title="🚗 Guess the Car Logo"
-       data-desc="Car brands guess karo. No repeat system."
-       data-target="carlogo">
-    🚗 Guess the Car Logo
-  </div>
-
-</section>
-
-    <div></div> class="game-section" id="memory">
-<div></div> class="game-section" id="pattern">
-<div></div> class="game-section" id="fake">
-<div></div> class="game-section" id="typing">
-<div></div> class="game-section" id="aim">
-<div></div> class="game-section" id="math">
-<div></div> class="game-section" id="country">
-<div></div> class="game-section" id="slot">
-<div></div> class="game-section" id="dots">
-<div></div> class="game-section" id="lie">
-<div></div> class="game-section" id="roast">
-<div></div> class="game-section" id="studylogo">
-<div></div> class="game-section" id="carlogo">
-
+<!-- ===== ABOUT ===== -->
 <h2>🙋 About Me</h2>
-<p>
-Hi, I’m Chaitanya. I love gaming, learning tech,
-and building cool stuff on the internet.
+<p>Hi, I’m Chaitanya. I love gaming, learning tech, and building cool stuff.</p>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

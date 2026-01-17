@@ -12,10 +12,6 @@ body {
   text-align: center;
 }
 
-#allGames {
-  display: none;
-}
-
 .modal {
   z-index: 9999;
 }
@@ -579,6 +575,7 @@ button:hover {
   border-radius: 16px;
   cursor: pointer;
 }
+
 
 
 

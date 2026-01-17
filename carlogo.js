@@ -1,3 +1,13 @@
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
+}
+
+function init() {
+  // 👇 existing code yahin rahega
+}
+
 const cars = [
   "Audi","BMW2","Mercedes","Toyota","Honda",
   "Hyundai","Kia","Tata","Mahindra","Ford",
@@ -67,5 +77,6 @@ nextCar.onclick = loadCarGame;
 
 // 🚀 first question
 loadCarGame();
+
 
 

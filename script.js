@@ -1,37 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const modal = document.getElementById("gameModal");
-  const modalTitle = document.getElementById("modalTitle");
-  const modalDesc = document.getElementById("modalDesc");
+  const title = document.getElementById("modalTitle");
+  const desc = document.getElementById("modalDesc");
   const playBtn = document.getElementById("playBtn");
   const closeBtn = document.querySelector(".close-btn");
 
-  let currentTarget = "";
+  let targetId = "";
 
   document.querySelectorAll(".game-card").forEach(card => {
     card.addEventListener("click", () => {
-      modalTitle.textContent = card.dataset.title;
-      modalDesc.textContent = card.dataset.desc;
-      currentTarget = card.dataset.target;
+      title.textContent = card.dataset.title;
+      desc.textContent = card.dataset.desc;
+      targetId = card.dataset.target;
       modal.style.display = "block";
     });
   });
 
-  closeBtn.addEventListener("click", () => {
+  closeBtn.onclick = () => modal.style.display = "none";
+
+  playBtn.onclick = () => {
     modal.style.display = "none";
-  });
+    document.getElementById("allGames").style.display = "block";
+    document.getElementById(targetId).scrollIntoView({behavior:"smooth"});
+  };
 
- playBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-
-  const gamesBox = document.getElementById("allGames");
-  gamesBox.style.display = "block";
-
-  // IMPORTANT: thoda delay so DOM ready ho
-  setTimeout(() => {
-    const target = document.getElementById(currentTarget);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  }, 100);
 });

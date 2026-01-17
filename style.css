@@ -110,3 +110,7 @@ input {
   object-fit: contain;
   margin: 10px 0;
 }
+
+.game-card {
+  pointer-events: auto;
+}

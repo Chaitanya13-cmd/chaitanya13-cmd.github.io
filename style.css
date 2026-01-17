@@ -1,4 +1,4 @@
-
+/* ===== GLOBAL RESET ===== */
 * {
   box-sizing: border-box;
 }
@@ -6,524 +6,14 @@
 body {
   margin: 0;
   padding: 0;
-  background: #120018;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
-.modal {
-  z-index: 9999;
-}
-
-body {
-  background: radial-gradient(circle at top, #020617, #000);
-  color: white;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  padding: 40px;
-}
-
-/* Neon heading */
-h1 {
-  color: #38bdf8;
-  text-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
-}
-
-p {
-  opacity: 0.85;
-  margin-bottom: 20px;
-}
-
-/* Sections */
-h2 {
-  margin: 30px 0 15px;
-  color: #22c55e;
-}
-
-/* Game list */
-ul {
-  list-style: none;
-  max-width: 400px;
-  margin: auto;
-}
-
-li {
-  background: rgba(255,255,255,0.05);
-  margin: 10px 0;
-  padding: 12px;
-  border-radius: 12px;
-  transition: transform 0.2s, background 0.2s;
-}
-
-li:hover {
-  transform: scale(1.05);
-  background: rgba(34,197,94,0.15);
-}
-
-/* Buttons */
-button {
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
-  border: none;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  color: black;
-  box-shadow: 0 0 20px rgba(34,197,94,0.5);
-}
-
-button:hover {
-  box-shadow: 0 0 30px rgba(34,197,94,0.9);
-}
-
-/* Mini game */
-#game-box {
-  width: 60px;
-  height: 60px;
-  background: red;
-  position: absolute;
-  top: 600px;          /* 👈 neeche dhakel diya */
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
-  z-index: 5;          /* 👈 kam rakha */
-}
-
-.card {
-  max-width: 700px;
-  margin: auto;
-  padding: 30px;
-  background: rgba(255,255,255,0.04);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-}
-
-#memoryDisplay {
-  font-size: 28px;
-  margin: 15px 0;
-}
-
-#memoryInput {
-  padding: 10px;
-  width: 180px;
-  text-align: center;
-}
-
-#memoryResult {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-
-#memoryDisplay {
-  font-size: 30px;
-  margin: 15px 0;
-}
-
-#memoryInput {
-  padding: 10px;
-  width: 220px;
-  text-align: center;
-  font-size: 16px;
-}
-
-#memoryResult {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#progress {
-  width: 200px;
-  height: 10px;
-  background: #333;
-  margin: 10px auto;
-  border-radius: 10px;
-}
-#bar {
-  height: 100%;
-  width: 0%;
-  background: lime;
-  border-radius: 10px;
-}
-
-#factText {
-  font-size: 20px;
-  margin: 15px 0;
-}
-
-button {
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 8px;
-  border: none;
-}
-
-#factResult {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#patternText {
-  font-size: 24px;
-  margin: 15px 0;
-}
-
-#patternInput {
-  padding: 10px;
-  width: 150px;
-  text-align: center;
-}
-
-#patternResult {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-#typingSentence {
-  font-size: 20px;
-  margin: 15px 0;
-}
-
-#typingInput {
-  width: 300px;
-  padding: 10px;
-  font-size: 16px;
-}
-
-#typingResult {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-/* AIM TRAINER FIX */
-
-#aimArea {
-  width: 320px;
-  height: 220px;
-  background: #020617;        /* dark background */
-  border: 2px solid #334155;
-  margin: 20px auto;
-  position: relative;
-}
-
-.target {
-  width: 30px;
-  height: 30px;
-  background: #22c55e;        /* bright green */
-  border-radius: 50%;
-  position: absolute;
-  cursor: pointer;
-}
-
-
-#mathQ { font-size: 22px; margin: 10px 0; }
-#mathInput { padding: 8px; width: 120px; }
-#mathResult { margin-top: 10px; font-size: 18px; }
-
-#countryEmoji {
-  font-size: 26px;
-  margin: 10px 0;
-}
-
-#countryInput {
-  padding: 8px;
-  width: 200px;
-  text-align: center;
-}
-
-#countryResult {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* 🌌 NEON CASINO THEME */
-
-body {
-  background: radial-gradient(circle at top, #020617, #000);
-  color: #e5e7eb;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* Headings glow */
-h2 {
-  color: #22d3ee;
-  text-shadow: 0 0 10px #22d3ee, 0 0 20px #0ea5e9;
-}
-
-/* Slot container */
-#slot {
-  font-size: 42px;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  margin: 15px 0;
-}
-
-/* Slot items neon box */
-.slotItem {
-  background: #020617;
-  padding: 12px 18px;
-  border-radius: 12px;
-  border: 2px solid #22c55e;
-  box-shadow:
-    0 0 10px #22c55e,
-    0 0 25px #16a34a,
-    inset 0 0 10px #22c55e;
-  transition: transform 0.15s ease;
-}
-
-.slotItem:hover {
-  transform: scale(1.1);
-}
-
-/* Spin button */
-#spinSlot {
-  margin-top: 10px;
-  padding: 12px 32px;
-  font-size: 18px;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
-  color: black;
-  background: linear-gradient(90deg, #22c55e, #4ade80);
-  box-shadow: 0 0 15px #22c55e, 0 0 30px #16a34a;
-}
-
-#spinSlot:hover {
-  box-shadow: 0 0 25px #4ade80, 0 0 50px #22c55e;
-}
-
-/* Result text glow */
-#slotResult {
-  margin-top: 12px;
-  font-size: 20px;
-  font-weight: bold;
-  text-shadow: 0 0 10px currentColor;
-}
-
-/* 🎮 GAME TITLES UPGRADE */
-
-h2 {
-  font-size: 32px;                 /* size bada */
-  margin: 30px 0 15px;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-
-  color: #22d3ee;
-
-  text-shadow:
-    0 0 5px #22d3ee,
-    0 0 15px #0ea5e9,
-    0 0 30px #0284c7;
-}
-
-/* Small screens ke liye */
-@media (max-width: 600px) {
-  h2 {
-    font-size: 26px;
-  }
-}
-
-h2 {
-  animation: glowPulse 2s infinite alternate;
-}
-
-/* Buttons – clean */
-button {
-  background: #1e293b;
-  color: #f8fafc;
-  border: 1px solid #334155;
-  border-radius: 8px;
-  padding: 10px 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #334155;
-}
-
-/* Slot items clean */
-.slotItem {
-  background: #020617 !important;
-  border: 1px solid #334155 !important;
-  box-shadow: none !important;
-}
-
-/* Result text */
-#slotResult {
-  text-shadow: none !important;
-}
-
-.game-section {
-  background: #020617;
-  border: 1px solid #1e293b;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 30px auto;
-  max-width: 700px;
-}
-
-#dotArea {
-  width: 300px;
-  height: 200px;
-  border: 2px solid #334155;
-  margin: 15px auto;
-  position: relative;
-  background: #020617;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-}
-
-#lieList {
-  list-style: none;
-  padding: 0;
-}
-
-.lieItem {
-  background: #020617;
-  border: 1px solid #334155;
-  padding: 12px;
-  margin: 8px 0;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.lieItem:hover {
-  background: #1e293b;
-}
-
-#lieResult {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#roastText {
-  font-size: 22px;
-  margin: 12px 0;
-  font-weight: 600;
-}
-
-#roastInput {
-  padding: 10px;
-  width: 220px;
-  text-align: center;
-}
-
-#roastResult {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-
-body {
   background: linear-gradient(180deg, #0b0618, #120a2a);
   color: #f3f4f6;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-.game-section {
-  background: #140b2e;
-  border: 1px solid #2a1b5e;
-  border-radius: 14px;
-  padding: 22px;
-  margin: 28px auto;
-  max-width: 760px;
-}
-
-h2 {
-  font-size: 30px !important;
-  font-weight: 700 !important;
-  margin: 10px 0 16px !important;
-  letter-spacing: 1px !important;
-  color: #e9d5ff !important;
-  text-shadow: none !important;
-  border-left: 4px solid #a78bfa;
-  padding-left: 12px;
-}
-
-button {
-  background: #1b1140;
-  color: #f3f4f6;
-  border: 1px solid #3b2a7a;
-  border-radius: 10px;
-  padding: 10px 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #24155a;
-}
-
-input {
-  background: #0f0828;
-  color: #f3f4f6;
-  border: 1px solid #3b2a7a;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-#aimArea {
-  background: #0b0618;
-  border: 2px solid #3b2a7a;
-}
-
-.target {
-  background: #22c55e;   
-  border: 2px solid #dcfce7;
-}
-
-.slotItem {
-  background: #0f0828 !important;
-  border: 1px solid #3b2a7a !important;
-  box-shadow: none !important;
-}
-
-#logoOnly {
-  width: 140px;       
-  height: 140px;      
-  object-fit: contain; 
-  background: white;
-  padding: 10px;
-  border-radius: 12px;
-  display: block;
-  margin: 15px auto;
-}
-
-#carLogo {
-  width: 180px;
-  height: 120px;
-  object-fit: contain;
-  margin: 10px 0;
-}
-
-.carBtn {
-  margin: 5px;
-  padding: 8px;
-  border-radius: 8px;
-  background: #a855f7;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.hero {
+  font-family: system-ui, Arial, sans-serif;
   text-align: center;
+}
+
+/* ===== HERO ===== */
+.hero {
   padding: 50px 20px;
   background: linear-gradient(180deg, #120018, #1d0026);
 }
@@ -531,30 +21,49 @@ input {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #e9d5ff;
 }
 
 .hero p {
   color: #c084fc;
-  margin-bottom: 25px;
 }
 
-.hero-stats {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+/* ===== GAME CARDS ===== */
+.games {
+  margin: 30px auto;
+  max-width: 1000px;
 }
 
-.hero-stats div {
+.game-card {
+  display: inline-block;
   background: #1d0026;
-  padding: 10px 16px;
-  border-radius: 14px;
-  box-shadow: 0 0 12px rgba(168,85,247,0.4);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: 10;
+  position: relative;
 }
 
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(168,85,247,0.6);
+}
 
+/* ===== GAME SECTIONS ===== */
+.game-section {
+  background: #140b2e;
+  border: 1px solid #2a1b5e;
+  border-radius: 14px;
+  padding: 22px;
+  margin: 40px auto;
+  max-width: 760px;
+}
+
+/* ===== BUTTONS ===== */
 button {
-  padding: 10px 16px;
+  padding: 10px 18px;
   border-radius: 10px;
   border: none;
   background: #a855f7;
@@ -567,30 +76,37 @@ button:hover {
   background: #c084fc;
 }
 
-.game-card {
-  display: inline-block;
-  background: #1d0026;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 16px;
-  cursor: pointer;
+/* ===== INPUTS ===== */
+input {
+  background: #0f0828;
+  color: #f3f4f6;
+  border: 1px solid #3b2a7a;
+  border-radius: 8px;
+  padding: 10px;
 }
 
+/* ===== MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+}
 
+.modal-content {
+  background: #1d0026;
+  max-width: 360px;
+  margin: 15% auto;
+  padding: 25px;
+  border-radius: 18px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ===== IMAGES ===== */
+#carLogo {
+  width: 180px;
+  height: 120px;
+  object-fit: contain;
+  margin: 10px 0;
+}

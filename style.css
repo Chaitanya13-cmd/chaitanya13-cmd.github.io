@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+#allGames {
+  display: none;
+}
+
 .modal {
   z-index: 9999;
 }
@@ -564,6 +568,7 @@ input {
   border-radius: 14px;
   box-shadow: 0 0 12px rgba(168,85,247,0.4);
 }
+
 
 
 

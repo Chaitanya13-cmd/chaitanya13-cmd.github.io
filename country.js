@@ -1,3 +1,13 @@
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
+}
+
+function init() {
+  // 👇 existing code yahin rahega
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const data = [
@@ -48,3 +58,4 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCountry();
 
 });
+

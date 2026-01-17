@@ -1,3 +1,13 @@
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
+}
+
+function init() {
+  // 👇 existing code yahin rahega
+}
+
 const facts = [
   { text: "The Sun rises in the East.", answer: true },
   { text: "Humans can breathe underwater without help.", answer: false },
@@ -44,3 +54,4 @@ nextBtn.addEventListener("click", loadRandomFact);
 
 // start game
 loadRandomFact();
+

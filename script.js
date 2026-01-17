@@ -22,11 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   playBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    const target = document.getElementById(currentTarget);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  });
+  modal.style.display = "none";
 
+  document.getElementById("allGames").style.display = "block";
+
+  const target = document.getElementById(currentTarget);
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
 });

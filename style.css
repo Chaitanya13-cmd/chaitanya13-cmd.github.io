@@ -498,19 +498,6 @@ input {
   box-shadow: none !important;
 }
 
-#slotResult,
-#aimResult,
-#typingResult,
-#mathResult,
-#countryResult,
-#lieResult,
-#oddResult,
-#roastResult,
-#dotResult {
-  text-shadow: none !important;
-}
-
-#studyLogo,
 #logoOnly {
   width: 140px;       
   height: 140px;      
@@ -592,6 +579,7 @@ button:hover {
   border-radius: 16px;
   cursor: pointer;
 }
+
 
 
 

@@ -1,3 +1,13 @@
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
+}
+
+function init() {
+  // 👇 existing code yahin rahega
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const sets = [
@@ -66,4 +76,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadLie();
 });
+
 

@@ -9,7 +9,7 @@
 
 <body>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 <header class="hero">
   <h1>🎮 Chaitanya Gaming Zone</h1>
   <p>Traveller | Future YouTuber | Gamer</p>
@@ -17,26 +17,31 @@
 
   <div class="hero-stats">
     <div>🔥 Streak: <span id="dailyStreak">1</span></div>
-    <div>🧠 Games: 10+</div>
+    <div>🧠 Games: 13</div>
     <div>⚡ Free Forever</div>
   </div>
 </header>
 
-<!-- GAME CARDS -->
+<!-- ================= GAME CARDS ================= -->
 <section class="games">
 
-  <div class="game-card" data-title="🧠 Memory Flash" data-desc="Remember the emoji sequence." data-target="memory">🧠 Memory Flash</div>
-  <div class="game-card" data-title="🧩 Pattern Breaker" data-desc="Guess the emoji pattern." data-target="pattern">🧩 Pattern Breaker</div>
-  <div class="game-card" data-title="🎯 Aim Trainer" data-desc="Test your aim speed." data-target="aim">🎯 Aim Trainer</div>
-  <div class="game-card" data-title="🧮 Quick Math Rush" data-desc="Fast math challenge." data-target="math">🧮 Quick Math Rush</div>
-  <div class="game-card" data-title="🌍 Guess the Country" data-desc="Guess country from emoji." data-target="country">🌍 Guess the Country</div>
-  <div class="game-card" data-title="😈 Guess the Roast" data-desc="Hard roast challenge." data-target="roast">😈 Guess the Roast</div>
-  <div class="game-card" data-title="📚 Study Logo" data-desc="Guess study logos." data-target="studylogo">📚 Study Logo</div>
-  <div class="game-card" data-title="🚗 Car Logo" data-desc="Guess car brand logos." data-target="carlogo">🚗 Car Logo</div>
+  <div class="game-card" data-title="🧠 Memory Flash" data-desc="Remember emoji sequence" data-target="memory">🧠 Memory Flash</div>
+  <div class="game-card" data-title="🧩 Pattern Breaker" data-desc="Guess the pattern" data-target="pattern">🧩 Pattern Breaker</div>
+  <div class="game-card" data-title="🕵️ Spot the Fake" data-desc="Fact or Fake?" data-target="fake">🕵️ Spot the Fake</div>
+  <div class="game-card" data-title="⌨️ Speed Typing" data-desc="Type fast" data-target="typing">⌨️ Speed Typing</div>
+  <div class="game-card" data-title="🎯 Aim Trainer" data-desc="Test your aim" data-target="aim">🎯 Aim Trainer</div>
+  <div class="game-card" data-title="🧮 Quick Math Rush" data-desc="Solve fast" data-target="math">🧮 Quick Math Rush</div>
+  <div class="game-card" data-title="🌍 Guess the Country" data-desc="Emoji → Country" data-target="country">🌍 Guess the Country</div>
+  <div class="game-card" data-title="🎰 Emoji Slot Machine" data-desc="Spin & Win" data-target="slot">🎰 Emoji Slot Machine</div>
+  <div class="game-card" data-title="🧠 Guess the Memory Count" data-desc="Count dots" data-target="dots">🧠 Memory Count</div>
+  <div class="game-card" data-title="🕵️ Guess the Lie" data-desc="Find the lie" data-target="lie">🕵️ Guess the Lie</div>
+  <div class="game-card" data-title="😈 Guess the Roast" data-desc="Fill the roast" data-target="roast">😈 Guess the Roast</div>
+  <div class="game-card" data-title="📚 Guess the Study Logo" data-desc="Study platforms" data-target="studylogo">📚 Study Logo</div>
+  <div class="game-card" data-title="🚗 Guess the Car Logo" data-desc="Car brands" data-target="carlogo">🚗 Car Logo</div>
 
 </section>
 
-<!-- MODAL -->
+<!-- ================= MODAL ================= -->
 <div id="gameModal" class="modal">
   <div class="modal-content">
     <span class="close-btn">×</span>
@@ -46,47 +51,151 @@
   </div>
 </div>
 
-<!-- ALL GAMES -->
+<!-- ================= ALL GAMES ================= -->
 <div id="allGames" style="display:none;">
 
+  <!-- MEMORY -->
   <div class="game-section" id="memory">
     <h2>🧠 Memory Flash</h2>
-    <button onclick="alert('Memory game logic here')">Start</button>
+    <p>Level: <span id="level">1</span> | Best: <span id="best">1</span></p>
+    <div id="progress"><div id="bar"></div></div>
+    <p id="memoryDisplay">Ready?</p>
+    <button id="startMemory">Start</button><br><br>
+    <input id="memoryInput" placeholder="Type emojis together">
+    <button id="checkMemory">Check</button>
+    <p id="memoryResult"></p>
   </div>
 
+  <!-- PATTERN -->
   <div class="game-section" id="pattern">
     <h2>🧩 Pattern Breaker</h2>
-    <button onclick="alert('Pattern game logic here')">Start</button>
+    <p id="patternText">Press Start</p>
+    <button id="startPattern">Start</button><br><br>
+    <input id="patternInput" placeholder="Emoji likho">
+    <button id="checkPattern">Check</button>
+    <p id="patternResult"></p>
   </div>
 
+  <!-- FAKE -->
+  <div class="game-section" id="fake">
+    <h2>🕵️ Spot the Fake</h2>
+    <p id="factText">Loading...</p>
+    <button id="trueBtn">TRUE</button>
+    <button id="falseBtn">FAKE</button>
+    <p id="factResult"></p>
+    <button id="nextFact">Next</button>
+  </div>
+
+  <!-- TYPING -->
+  <div class="game-section" id="typing">
+    <h2>⌨️ Speed Typing</h2>
+    <p id="typingSentence">Press Start</p>
+    <button id="startTyping">Start</button><br><br>
+    <input id="typingInput" placeholder="Type here">
+    <button id="checkTyping">Check</button>
+    <p id="typingResult"></p>
+  </div>
+
+  <!-- AIM -->
   <div class="game-section" id="aim">
     <h2>🎯 Aim Trainer</h2>
-    <button onclick="alert('Aim game logic here')">Start</button>
+    <p>Time: <span id="aimTime">10</span>s | Score: <span id="aimScore">0</span></p>
+    <button id="startAim">Start</button>
+    <div id="aimArea"></div>
+    <p id="aimResult"></p>
   </div>
 
+  <!-- MATH -->
   <div class="game-section" id="math">
     <h2>🧮 Quick Math Rush</h2>
-    <button onclick="alert('Math game logic here')">Start</button>
+    <p id="mathQ">Press Start</p>
+    <button id="startMath">Start</button><br><br>
+    <input id="mathInput" type="number">
+    <button id="checkMath">Check</button>
+    <p id="mathTimer"></p>
+    <p id="mathResult"></p>
   </div>
 
+  <!-- COUNTRY -->
   <div class="game-section" id="country">
     <h2>🌍 Guess the Country</h2>
-    <button onclick="alert('Country game logic here')">Start</button>
+    <p id="countryEmoji">🌍</p>
+    <input id="countryInput" placeholder="Country name">
+    <button id="checkCountry">Check</button>
+    <button id="nextCountry">Next</button>
+    <p id="countryResult"></p>
   </div>
 
+  <!-- SLOT -->
+  <div class="game-section" id="slot">
+    <h2>🎰 Emoji Slot Machine</h2>
+    <div id="slot">
+      <span class="slotItem">❓</span>
+      <span class="slotItem">❓</span>
+      <span class="slotItem">❓</span>
+    </div>
+    <button id="spinSlot">SPIN</button>
+    <p id="slotResult"></p>
+  </div>
+
+  <!-- DOTS -->
+  <div class="game-section" id="dots">
+    <h2>🧠 Guess the Memory Count</h2>
+    <div id="dotArea"></div>
+    <button id="startDots">Start</button><br><br>
+    <input id="dotGuess" type="number">
+    <button id="checkDots">Check</button>
+    <p id="dotResult"></p>
+  </div>
+
+  <!-- LIE -->
+  <div class="game-section" id="lie">
+    <h2>🕵️ Guess the Lie</h2>
+    <ul id="lieList">
+      <li class="lieItem"></li>
+      <li class="lieItem"></li>
+      <li class="lieItem"></li>
+    </ul>
+    <p id="lieResult"></p>
+    <button id="nextLie">Next</button>
+  </div>
+
+  <!-- ROAST -->
   <div class="game-section" id="roast">
     <h2>😈 Guess the Roast</h2>
-    <button onclick="alert('Roast game logic here')">Start</button>
+    <p id="roastText">Press Start</p>
+    <button id="startRoast">Start</button><br><br>
+    <input id="roastInput">
+    <button id="checkRoast">Check</button>
+    <p id="roastResult"></p>
   </div>
 
+  <!-- STUDY LOGO -->
   <div class="game-section" id="studylogo">
-    <h2>📚 Study Logo</h2>
-    <button onclick="alert('Study logo game logic here')">Start</button>
+    <h2>📚 Guess the Study Logo</h2>
+    <img id="studyLogo">
+    <div>
+      <button class="studyBtn"></button>
+      <button class="studyBtn"></button>
+      <button class="studyBtn"></button>
+      <button class="studyBtn"></button>
+    </div>
+    <p id="studyResult"></p>
+    <button id="nextStudy">Next</button>
   </div>
 
+  <!-- CAR LOGO -->
   <div class="game-section" id="carlogo">
     <h2>🚗 Guess the Car Logo</h2>
-    <button onclick="alert('Car logo game logic here')">Start</button>
+    <img id="carLogo">
+    <div>
+      <button class="carBtn"></button>
+      <button class="carBtn"></button>
+      <button class="carBtn"></button>
+      <button class="carBtn"></button>
+    </div>
+    <p id="carResult"></p>
+    <button id="nextCar">Next</button>
   </div>
 
 </div>
@@ -94,6 +203,21 @@
 <h2>🙋 About Me</h2>
 <p>Hi, I’m Chaitanya. I love gaming, learning tech, and building cool stuff.</p>
 
+<!-- ================= SCRIPTS ================= -->
 <script src="script.js"></script>
+<script src="memory.js"></script>
+<script src="pattern.js"></script>
+<script src="fake.js"></script>
+<script src="typing.js"></script>
+<script src="aim.js"></script>
+<script src="math.js"></script>
+<script src="country.js"></script>
+<script src="slot.js"></script>
+<script src="dots.js"></script>
+<script src="lie.js"></script>
+<script src="roast.js"></script>
+<script src="studylogo.js"></script>
+<script src="carlogo.js"></script>
+
 </body>
 </html>

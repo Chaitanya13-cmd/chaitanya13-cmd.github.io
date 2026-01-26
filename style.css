@@ -77,3 +77,60 @@ button {
 .game-section * {
   pointer-events: auto;
 }
+
+/* ===== AIM TRAINER FIX ===== */
+#aimArea {
+  width: 320px;
+  height: 220px;
+  background: #0b0618;
+  border: 2px solid #a855f7;
+  margin: 20px auto;
+  position: relative;
+}
+
+.target {
+  width: 30px;
+  height: 30px;
+  background: #22c55e;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* ===== MEMORY COUNT FIX ===== */
+#dotArea {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #a855f7;
+  margin: 15px auto;
+  position: relative;
+  background: #0b0618;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* ===== GUESS THE LIE FIX ===== */
+#lieList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.lieItem {
+  background: #1d0026;
+  border: 1px solid #a855f7;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.lieItem:hover {
+  background: #2a0040;
+}

@@ -73,3 +73,7 @@ button {
   padding: 25px;
   border-radius: 18px;
 }
+
+.game-section * {
+  pointer-events: auto;
+}

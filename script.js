@@ -26,3 +26,25 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
 });
+
+document.getElementById("searchBtn").addEventListener("click", () => {
+  const query = document.getElementById("searchInput").value.trim();
+  if (!query) return;
+
+  const q = encodeURIComponent(query);
+
+  document.getElementById("googleLink").href =
+    `https://www.google.com/search?q=${q}`;
+
+  document.getElementById("bingLink").href =
+    `https://www.bing.com/search?q=${q}`;
+
+  document.getElementById("duckLink").href =
+    `https://duckduckgo.com/?q=${q}`;
+
+  document.getElementById("yahooLink").href =
+    `https://search.yahoo.com/search?p=${q}`;
+
+  document.getElementById("ecosiaLink").href =
+    `https://www.ecosia.org/search?q=${q}`;
+});

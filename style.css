@@ -196,3 +196,15 @@ button {
   display: block;
   margin: 15px auto;
 }
+
+/* 📚 STUDY LOGO FIX – SIZE LOCK */
+#studyLogo {
+  width: 220px;          /* fixed width */
+  height: 140px;         /* fixed height */
+  object-fit: contain;   /* logo crop nahi hoga */
+  background: white;     /* uniform background */
+  padding: 10px;
+  border-radius: 12px;
+  display: block;
+  margin: 15px auto;
+}

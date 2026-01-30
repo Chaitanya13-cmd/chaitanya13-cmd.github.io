@@ -134,3 +134,53 @@ button {
 .lieItem:hover {
   background: #2a0040;
 }
+
+.multi-search {
+  margin: 30px auto;
+  max-width: 700px;
+  padding: 20px;
+  background: #1d0026;
+  border-radius: 18px;
+  box-shadow: 0 0 20px rgba(168,85,247,0.4);
+}
+
+.multi-search input {
+  width: 70%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.multi-search button {
+  padding: 12px 18px;
+  margin-left: 8px;
+  border-radius: 10px;
+  border: none;
+  background: #a855f7;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-engines {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-engines a {
+  padding: 8px 14px;
+  background: #2a0040;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.search-engines a:hover {
+  background: #a855f7;
+  color: black;
+}

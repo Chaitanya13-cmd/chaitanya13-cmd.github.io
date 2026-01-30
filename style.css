@@ -184,3 +184,15 @@ button {
   background: #a855f7;
   color: black;
 }
+
+/* 🚗 CAR LOGO FIX – SIZE LOCK */
+#carLogo {
+  width: 220px;          /* fixed width */
+  height: 140px;         /* fixed height */
+  object-fit: contain;   /* logo crop nahi hoga */
+  background: white;     /* same background */
+  padding: 10px;
+  border-radius: 12px;
+  display: block;
+  margin: 15px auto;
+}

@@ -311,3 +311,53 @@ margin-bottom:12px;
 display:none;
 }
 }
+
+.section-title{
+font-size:42px;
+margin-bottom:30px;
+text-align:left;
+}
+
+.game-thumb{
+height:170px;
+overflow:hidden;
+border-radius:18px;
+margin-bottom:18px;
+}
+
+.game-thumb img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.4s;
+display:block;
+}
+
+.feature-card:hover img{
+transform:scale(1.08);
+}
+
+.card-body{
+text-align:left;
+}
+
+.tag{
+display:inline-block;
+padding:6px 12px;
+border-radius:999px;
+background:linear-gradient(90deg,#8b5cf6,#3b82f6);
+font-size:12px;
+margin-bottom:12px;
+}
+
+.rating{
+display:flex;
+justify-content:space-between;
+margin:18px 0;
+color:#ffd54f;
+font-size:14px;
+}
+
+.play-card{
+width:100%;
+}
